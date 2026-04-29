@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael R. Hall — Gameplay Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav">
+      <div class="nav-logo">
+        <span class="nav-logo-id">// Gameplay Engineer</span>
+        <span class="nav-logo-name">Michael R. Hall</span>
+      </div>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="assets/resume.pdf" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero-layout" style="display:grid; grid-template-columns:1fr 230px; gap:2rem; align-items:start; margin-bottom:2.5rem;">
+
+      <div>
+        <div class="project-eyebrow">UE5 · C++ · Multiplayer</div>
+        <h1 style="font-family:var(--font-mono); font-size:42px; font-weight:400; color:var(--black); line-height:1.0; letter-spacing:-0.02em; margin-bottom:18px;">
+          Systems that<br><span class="orange">feel alive.</span>
+        </h1>
+        <p style="font-family:var(--font-mono); font-size:12px; color:var(--grey-text); line-height:1.9; max-width:420px; margin-bottom:1.5rem;">
+          C++ gameplay and AI architecture for multiplayer games. Server-authoritative combat, scalable NPC behavior, and production-grade UE5 systems.
+        </p>
+
+        <div class="tag-section">
+          <div class="tag-group">
+            <span class="tag-group-label">// platforms &amp; languages</span>
+            <span class="tag tag-primary">C++</span>
+            <span class="tag tag-primary">Unreal Engine 5</span>
+            <span class="tag tag-primary">Blueprint</span>
+          </div>
+          <div class="tag-divider"></div>
+          <div class="tag-group">
+            <span class="tag-group-label">// specializations</span>
+            <span class="tag tag-secondary">Multiplayer</span>
+            <span class="tag tag-secondary">AI Systems</span>
+            <span class="tag tag-secondary">GAS</span>
+            <span class="tag tag-secondary">Behavior Trees</span>
+            <span class="tag tag-secondary">Server Auth</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-title">// sys.profile</div>
+        <div class="stat-row">
+          <span class="stat-key">exp</span>
+          <span class="stat-val">2.5yr UE5</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">role</span>
+          <span class="stat-val">Gameplay Eng.</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">engine</span>
+          <span class="stat-val">Unreal 5</span>
+        </div>
+        <div class="stat-divider-inner"></div>
+        <div class="stat-row">
+          <span class="stat-key">ships</span>
+          <span class="stat-val stat-val-accent">2026</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">location</span>
+          <span class="stat-val">Chicago, IL</span>
+        </div>
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          <span class="avail-text">Available</span>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================== PROJECT LOG ===================== -->
+    <section id="work">
+
+      <div class="section-head">
+        <span class="section-label">// project.log</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-layout">
+
+        <!-- 2x2 card grid -->
+        <div class="project-grid">
+
+          <a class="card"
+             href="projects/reaper-actual.html"
+             onmouseenter="previewProject('RA')"
+             onmouseleave="clearPreview()">
+            <div class="card-bg" style="background-image:url('assets/images/ra-thumb.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-code">SYS-001</span>
+                <span class="card-badge">Professional</span>
+              </div>
+              <div class="card-title">Reaper Actual</div>
+              <div class="card-desc">Live extraction shooter. AI ticketing subsystem, auto turret, Smart Object patrol framework, Blueprint-to-C++ migrations.</div>
+              <div class="card-footer">
+                <div class="card-tags-sm">
+                  <span class="card-tag-sm">UE5</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">C++</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">Multiplayer</span>
+                </div>
+                <span class="card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="card"
+             href="projects/tooth-and-nail.html"
+             onmouseenter="previewProject('TN')"
+             onmouseleave="clearPreview()">
+            <div class="card-bg" style="background-image:url('assets/images/tn-thumb.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-code">SYS-002</span>
+                <span class="card-badge">In Dev</span>
+              </div>
+              <div class="card-title">Tooth &amp; Nail</div>
+              <div class="card-desc">Multiplayer martial arts fighter. Directional guard, posture system, server-auth combat pipeline. Active devlog.</div>
+              <div class="card-footer">
+                <div class="card-tags-sm">
+                  <span class="card-tag-sm">UE5</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">Combat</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">Devlog</span>
+                </div>
+                <span class="card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="card"
+             href="projects/multiplayer-plugin.html"
+             onmouseenter="previewProject('MP')"
+             onmouseleave="clearPreview()">
+            <div class="card-bg" style="background-image:url('assets/images/mp-thumb.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-code">SYS-003</span>
+                <span class="card-badge">Systems</span>
+              </div>
+              <div class="card-title">Multiplayer Plugin</div>
+              <div class="card-desc">Reusable UE5 session management and matchmaking abstraction. Online Subsystem integration.</div>
+              <div class="card-footer">
+                <div class="card-tags-sm">
+                  <span class="card-tag-sm">Plugin</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">Networking</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">OSS</span>
+                </div>
+                <span class="card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="card"
+             href="projects/playable-demos.html"
+             onmouseenter="previewProject('DEMOS')"
+             onmouseleave="clearPreview()">
+            <div class="card-bg" style="background-image:url('assets/images/demos-thumb.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-code">SYS-004</span>
+                <span class="card-badge">Playable</span>
+              </div>
+              <div class="card-title">Playable Demos</div>
+              <div class="card-desc">Stay A While &amp; CyberSekiro. Shipped builds on itch.io. C++ combat, parry systems, capstone team lead.</div>
+              <div class="card-footer">
+                <div class="card-tags-sm">
+                  <span class="card-tag-sm">itch.io</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">C++</span>
+                  <span class="card-tag-sm">·</span>
+                  <span class="card-tag-sm">Combat</span>
+                </div>
+                <span class="card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <!-- end project-grid -->
+
+        <!-- preview panel -->
+        <div class="preview-panel">
+          <div class="preview-panel-label">// project.detail</div>
+          <div class="preview-body">
+            <div class="preview-hint" id="preview-hint">hover a<br>project</div>
+            <div class="preview-content" id="preview-content">
+              <div class="preview-project-name" id="preview-name"></div>
+              <div class="preview-img">
+                <img id="preview-img" src="" alt="" style="display:none;" />
+                <span class="preview-img-placeholder" id="preview-placeholder">[ image ]</span>
+              </div>
+              <div class="preview-divider"></div>
+              <div class="preview-desc" id="preview-desc"></div>
+              <div>
+                <div class="preview-skill-label">// systems used</div>
+                <div class="preview-tags" id="preview-tags"></div>
+              </div>
+              <div class="preview-cta" id="preview-cta"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end projects-layout -->
+
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" style="margin-bottom:2.5rem;">
+
+      <div class="section-head">
+        <span class="section-label">// services.available</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-block">
+          <div class="service-num">01 — Freelance</div>
+          <div class="service-title">UE5 Gameplay Development</div>
+          <div class="service-desc">Custom gameplay features, AI systems, and multiplayer architecture. Available via Fiverr.</div>
+        </div>
+        <div class="service-block">
+          <div class="service-num">02 — Consult</div>
+          <div class="service-title">Systems Architecture</div>
+          <div class="service-desc">C++ refactors, GAS integration, and server-authoritative networking review.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== FOOTER / CONTACT ===================== -->
+    <footer class="footer" id="contact">
+      <div class="footer-links">
+        <a class="footer-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
+        <a class="footer-link" href="https://www.fiverr.com/YOUR-FIVERR" target="_blank">Fiverr</a>
+        <a class="footer-link" href="assets/resume.pdf" target="_blank">Resume</a>
+      </div>
+      <span class="footer-copy">michael-hall.dev // 2026</span>
+    </footer>
+
+  </div>
+  <!-- end page-wrapper -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>

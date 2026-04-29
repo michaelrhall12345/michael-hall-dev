@@ -1,0 +1,802 @@
+/* ============================================================
+   MICHAEL HALL — michael-hall.dev
+   Design System — style.css
+   All pages import this file.
+   ============================================================ */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+/* --- CSS Variables --- */
+:root {
+  --bg:         #f0ede8;
+  --black:      #0a0a0f;
+  --orange:     #ff5500;
+  --grey-text:  #444444;
+  --grey-mid:   #999999;
+  --grey-light: #cccccc;
+  --grey-border:#dddddd;
+  --white:      #ffffff;
+
+  --font-mono:  'Share Tech Mono', 'Courier New', monospace;
+  --font-body:  'Space Grotesk', system-ui, sans-serif;
+
+  --border-heavy: 2px solid var(--black);
+  --border-light: 1px solid var(--grey-border);
+  --border-orange: 1px solid var(--orange);
+
+  --transition: 0.18s ease;
+}
+
+/* --- Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--black);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* --- Layout --- */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+/* --- Scanline texture overlay --- */
+.page-wrapper::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.018) 3px,
+    rgba(0,0,0,0.018) 4px
+  );
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  margin-bottom: 3rem;
+  border-bottom: var(--border-heavy);
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.nav-logo-id {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.nav-logo-name {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--black);
+  letter-spacing: 0.04em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--grey-mid);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+/* back link used on project pages */
+.nav-back {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--grey-mid);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.nav-back:hover {
+  color: var(--orange);
+}
+
+/* ============================================================
+   SECTION HEADERS  e.g. // project.log ————————
+   ============================================================ */
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--grey-mid);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: var(--grey-light);
+}
+
+/* ============================================================
+   DIVIDERS
+   ============================================================ */
+.divider {
+  border: none;
+  border-top: var(--border-heavy);
+  margin: 2.5rem 0;
+}
+
+.divider-light {
+  border: none;
+  border-top: var(--border-light);
+  margin: 1.5rem 0;
+}
+
+/* ============================================================
+   TAGS  — orange (primary) and grey (secondary)
+   ============================================================ */
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 3px 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+.tag-primary {
+  border-color: var(--orange);
+  color: var(--orange);
+  background: transparent;
+}
+
+.tag-secondary {
+  border-color: var(--grey-light);
+  color: var(--grey-mid);
+  background: transparent;
+}
+
+/* ============================================================
+   TAG GROUP  (two-row skill section in hero)
+   ============================================================ */
+.tag-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-group-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--grey-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.tag-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--grey-border);
+}
+
+/* ============================================================
+   STAT BLOCK  (inverted black card in hero)
+   ============================================================ */
+.stat-block {
+  border: var(--border-heavy);
+  padding: 1.25rem;
+  background: var(--black);
+}
+
+.stat-title {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--orange);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.stat-key {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.05em;
+}
+
+.stat-val {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--bg);
+}
+
+.stat-val-accent {
+  color: var(--orange);
+}
+
+.stat-divider-inner {
+  height: 1px;
+  background: #1c1c1c;
+  margin: 8px 0;
+}
+
+.avail-badge {
+  margin-top: 14px;
+  border: var(--border-orange);
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.avail-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+  margin-right: 6px;
+  animation: pulse 2s infinite;
+  vertical-align: middle;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.2; }
+}
+
+.avail-text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   PROJECT CARDS  — grid of 2
+   ============================================================ */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--black);
+  border: var(--border-heavy);
+}
+
+.card {
+  background: var(--bg);
+  padding: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background var(--transition);
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* orange top bar on every card */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--orange);
+  z-index: 2;
+}
+
+/* image layer (hidden by default, shown on hover) */
+.card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  z-index: 0;
+}
+
+/* dark overlay on top of image */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  opacity: 0;
+  transition: opacity 0.25s;
+  z-index: 1;
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* hover state — invert card */
+.card:hover { background: var(--black); }
+.card:hover .card-bg      { opacity: 1; }
+.card:hover .card-overlay { opacity: 1; }
+.card:hover .card-title   { color: #ffffff; }
+.card:hover .card-desc    { color: #aaaaaa; }
+.card:hover .card-badge   { color: var(--orange); border-color: rgba(255,85,0,0.4); }
+.card:hover .card-code    { color: #333333; }
+.card:hover .card-tag-sm  { color: #555555; }
+.card:hover .card-arrow   { color: var(--orange); }
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-code {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--grey-light);
+  letter-spacing: 0.15em;
+  transition: color var(--transition);
+}
+
+.card-badge {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  padding: 2px 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--black);
+  color: var(--orange);
+  background: transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.card-title {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--black);
+  margin-bottom: 6px;
+  transition: color var(--transition);
+}
+
+.card-desc {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--grey-text);
+  line-height: 1.75;
+  flex: 1;
+  transition: color var(--transition);
+}
+
+.card-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-tags-sm {
+  display: flex;
+  gap: 6px;
+}
+
+.card-tag-sm {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--grey-mid);
+  letter-spacing: 0.05em;
+  transition: color var(--transition);
+}
+
+.card-arrow {
+  font-size: 12px;
+  color: var(--grey-light);
+  transition: color var(--transition);
+}
+
+/* ============================================================
+   PREVIEW PANEL  (right of project grid)
+   ============================================================ */
+.projects-layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.preview-panel {
+  border: var(--border-heavy);
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+}
+
+.preview-panel-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: #444;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.preview-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.preview-hint {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #2a2a2a;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.preview-content {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.preview-project-name {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.preview-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #141414;
+  border: 1px solid #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.preview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-img-placeholder {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: #2a2a2a;
+  letter-spacing: 0.1em;
+}
+
+.preview-divider {
+  height: 1px;
+  background: #1c1c1c;
+}
+
+.preview-desc {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #888;
+  line-height: 1.75;
+}
+
+.preview-skill-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: #444;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.preview-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.preview-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  padding: 2px 7px;
+  border: 1px solid #222;
+  color: #555;
+  letter-spacing: 0.05em;
+}
+
+.preview-cta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   SERVICES GRID
+   ============================================================ */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--black);
+  border: var(--border-heavy);
+  margin-bottom: 2.5rem;
+}
+
+.service-block {
+  background: var(--bg);
+  padding: 1.25rem;
+}
+
+.service-num {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--orange);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.service-title {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--black);
+  margin-bottom: 6px;
+}
+
+.service-desc {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--grey-text);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  border-top: var(--border-heavy);
+}
+
+.footer-links {
+  display: flex;
+  gap: 6px;
+}
+
+.footer-link {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: var(--border-orange);
+  padding: 4px 10px;
+  transition: background var(--transition), color var(--transition);
+}
+
+.footer-link:hover {
+  background: var(--orange);
+  color: var(--bg);
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--grey-light);
+}
+
+/* ============================================================
+   PROJECT PAGES  — shared styles for reaper-actual.html etc.
+   ============================================================ */
+.project-hero {
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+
+.project-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.project-eyebrow::before {
+  content: '▶';
+  font-size: 8px;
+}
+
+.project-title {
+  font-family: var(--font-mono);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.project-title .hl {
+  color: var(--orange);
+}
+
+.project-summary {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--grey-text);
+  line-height: 1.9;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+/* video embed */
+.video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--black);
+  border: var(--border-heavy);
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* screenshot grid */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--black);
+  border: var(--border-heavy);
+  margin-bottom: 2.5rem;
+}
+
+.screenshot-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* content blocks for project pages (text sections) */
+.content-block {
+  margin-bottom: 2.5rem;
+}
+
+.content-block p {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--grey-text);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.content-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.orange { color: var(--orange); }
+.mono   { font-family: var(--font-mono); }
+
+/* ============================================================
+   RESPONSIVE  — basic mobile handling
+   ============================================================ */
+@media (max-width: 700px) {
+  .project-grid       { grid-template-columns: 1fr; }
+  .projects-layout    { grid-template-columns: 1fr; }
+  .preview-panel      { display: none; }
+  .hero-layout        { grid-template-columns: 1fr; }
+  .stat-block         { display: none; }
+  .services-grid      { grid-template-columns: 1fr; }
+  .project-hero       { grid-template-columns: 1fr; }
+  .screenshot-grid    { grid-template-columns: 1fr; }
+  .footer             { flex-direction: column; gap: 1rem; align-items: flex-start; }
+  .nav-links          { gap: 1rem; }
+  .page-wrapper       { padding: 1.5rem 1rem; }
+}

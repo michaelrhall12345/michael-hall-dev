@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM NPC Plugin — Michael R. Hall</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav">
+      <div class="nav-logo">
+        <span class="nav-logo-id">// Gameplay Engineer</span>
+        <span class="nav-logo-name">Michael R. Hall</span>
+      </div>
+      <div class="nav-links">
+        <a class="nav-back" href="../index.html">← Back</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../assets/resume.pdf" target="_blank">Resume</a>
+      </div>
+    </nav>
+
+    <!-- ===================== PROJECT HERO ===================== -->
+    <section class="project-hero">
+
+      <div>
+        <div class="project-eyebrow">Solo Dev · UE5 Plugin · OpenAI API</div>
+        <h1 class="project-title">LLM NPC<br><span class="hl">Plugin.</span></h1>
+        <p class="project-summary">
+          A UE5 plugin integrating GPT-driven NPC dialogue with tunable
+          personality profiles and behavioral data assets. NPCs respond
+          dynamically to player input via the OpenAI API, with per-character
+          personality and context windows defined in data assets.
+        </p>
+        <div class="tag-group" style="gap:6px;">
+          <span class="tag tag-primary">C++</span>
+          <span class="tag tag-primary">UE5</span>
+          <span class="tag tag-secondary">OpenAI API</span>
+          <span class="tag tag-secondary">Plugin Arch</span>
+          <span class="tag tag-secondary">Data Assets</span>
+          <span class="tag tag-secondary">NPC Design</span>
+          <span class="tag tag-secondary">Blueprint</span>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-title">// project.info</div>
+        <div class="stat-row">
+          <span class="stat-key">type</span>
+          <span class="stat-val">UE5 Plugin</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">engine</span>
+          <span class="stat-val">Unreal 5</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">api</span>
+          <span class="stat-val">OpenAI GPT</span>
+        </div>
+        <div class="stat-divider-inner"></div>
+        <div class="stat-row">
+          <span class="stat-key">status</span>
+          <span class="stat-val stat-val-accent">In Dev</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">source</span>
+          <span class="stat-val">GitHub</span>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================== VIDEO ===================== -->
+    <section style="margin-bottom:2.5rem;">
+      <div class="section-head">
+        <span class="section-label">// feature.showcase</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="video-wrap">
+        <!-- TODO: replace with your walkthrough video YouTube embed ID -->
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+          title="LLM NPC Plugin — Feature Showcase"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- ===================== SYSTEMS OVERVIEW ===================== -->
+    <section style="margin-bottom:2.5rem;">
+      <div class="section-head">
+        <span class="section-label">// systems.overview</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--black); border:var(--border-heavy); margin-bottom:1px;">
+        <div class="service-block">
+          <div class="service-num">01</div>
+          <div class="service-title">GPT API Integration</div>
+          <div class="service-desc">
+            Async HTTP requests to the OpenAI API from C++. Responses
+            streamed back and injected into the NPC dialogue pipeline
+            at runtime.
+            <!-- TODO: add more specifics -->
+          </div>
+        </div>
+        <div class="service-block">
+          <div class="service-num">02</div>
+          <div class="service-title">Personality Data Assets</div>
+          <div class="service-desc">
+            Per-character personality profiles defined in UE5 Data Assets.
+            Designers tune tone, knowledge scope, and behavioral constraints
+            without touching code.
+            <!-- TODO: add more specifics -->
+          </div>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--black); border:var(--border-heavy); border-top:none;">
+        <div class="service-block">
+          <div class="service-num">03</div>
+          <div class="service-title">Context Window Management</div>
+          <div class="service-desc">
+            Conversation history tracked per NPC instance. Context windows
+            managed to stay within API token limits while preserving
+            dialogue continuity.
+            <!-- TODO: add more specifics -->
+          </div>
+        </div>
+        <div class="service-block">
+          <div class="service-num">04</div>
+          <div class="service-title">Blueprint-Accessible Interface</div>
+          <div class="service-desc">
+            Full plugin interface exposed to Blueprint so designers can
+            trigger dialogue, pass context, and handle responses without
+            writing C++.
+            <!-- TODO: add more specifics -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCREENSHOTS ===================== -->
+    <section style="margin-bottom:2.5rem;">
+      <div class="section-head">
+        <span class="section-label">// screenshots</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="screenshot-grid">
+        <!-- TODO: replace with real screenshots — data assets, blueprint graph, in-game dialogue -->
+        <img src="../assets/images/llm-screen-1.jpg" alt="LLM NPC Plugin screenshot 1" />
+        <img src="../assets/images/llm-screen-2.jpg" alt="LLM NPC Plugin screenshot 2" />
+        <img src="../assets/images/llm-screen-3.jpg" alt="LLM NPC Plugin screenshot 3" />
+        <img src="../assets/images/llm-screen-4.jpg" alt="LLM NPC Plugin screenshot 4" />
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a class="footer-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        <!-- TODO: replace with direct link to plugin repo -->
+        <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
+        <a class="footer-link" href="https://www.fiverr.com/YOUR-FIVERR" target="_blank">Fiverr</a>
+        <a class="footer-link" href="../assets/resume.pdf" target="_blank">Resume</a>
+      </div>
+      <span class="footer-copy">michael-hall.dev // 2026</span>
+    </footer>
+
+  </div>
+
+</body>
+</html>
