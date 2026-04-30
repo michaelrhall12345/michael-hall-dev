@@ -12,15 +12,16 @@
 
     <!-- ===================== NAV ===================== -->
     <nav class="nav">
-      <div class="nav-logo">
-        <span class="nav-logo-id">// Gameplay Engineer</span>
-        <span class="nav-logo-name">Michael R. Hall</span>
+      <div class="nav-logo-inline">
+        <span class="nav-logo-name-lg">Michael R. Hall</span>
+        <span class="nav-logo-divider">//</span>
+        <span class="nav-logo-id-inline">Gameplay Engineer</span>
       </div>
-      <div class="nav-links">
-        <a class="nav-back" href="../index.html">← Back</a>
-        <a href="../index.html#work">Work</a>
-        <a href="../index.html#services">Services</a>
-        <a href="../assets/resume.pdf" target="_blank">Resume</a>
+      <div class="footer-links">
+        <a class="footer-link" href="../index.html">← Back</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/michael-hall-400491303/" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
+        <a class="footer-link" href="../assets/resume.pdf" target="_blank">Resume</a>
       </div>
     </nav>
 
@@ -32,18 +33,34 @@
         <h1 class="project-title">Reaper<br><span class="hl">Actual.</span></h1>
         <p class="project-summary">
           Live multiplayer extraction shooter built in Unreal Engine 5.
-          Responsible for AI systems architecture, server-authoritative gameplay,
+          As Associate Gameplay Engineer at Distinct Possibility Studios,
+          I owned AI systems architecture, server-authoritative gameplay features,
           and Blueprint-to-C++ migrations across a production codebase.
+          Every system I built was designed and validated for network relevance from
+          the ground up — nothing shipped without replication in mind.
+          Working alongside design and art teams sharpened my ability to build
+          systems that were both technically sound and designer-extensible,
+          bridging the gap between engineering constraints and creative intent.
         </p>
-        <div class="tag-group" style="gap:6px;">
-          <span class="tag tag-primary">C++</span>
-          <span class="tag tag-primary">UE5</span>
-          <span class="tag tag-secondary">Behavior Trees</span>
-          <span class="tag tag-secondary">EQS</span>
-          <span class="tag tag-secondary">Smart Objects</span>
-          <span class="tag tag-secondary">Wwise</span>
-          <span class="tag tag-secondary">Multiplayer</span>
-          <span class="tag tag-secondary">GAS</span>
+
+        <!-- Primary skills — C++ and UE5 on their own line -->
+        <div class="tag-section">
+          <div class="tag-group">
+            <span class="tag-group-label-orange">// primary</span>
+            <span class="tag tag-skill">C++</span>
+            <span class="tag tag-skill">Unreal Engine 5</span>
+          </div>
+          <div class="tag-divider"></div>
+          <div class="tag-group">
+            <span class="tag-group-label-orange">// systems &amp; tools</span>
+            <span class="tag tag-skill">Behavior Trees</span>
+            <span class="tag tag-skill">EQS</span>
+            <span class="tag tag-skill">Smart Objects</span>
+            <span class="tag tag-skill">Wwise</span>
+            <span class="tag tag-skill">Multiplayer Replication</span>
+            <span class="tag tag-skill">GAS</span>
+            <span class="tag tag-skill">Perforce</span>
+          </div>
         </div>
       </div>
 
@@ -83,74 +100,65 @@
         <div class="section-line"></div>
       </div>
 
-      <div class="video-wrap">
-        <!-- TODO: replace src with your YouTube embed URL -->
-        <!-- Format: https://www.youtube.com/embed/VIDEO_ID -->
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-          title="Reaper Actual — Feature Showcase"
-          allowfullscreen>
-        </iframe>
-      </div>
+      <video
+        controls
+        style="width:100%; border:var(--border-heavy); display:block; background:var(--black);">
+        <source src="../assets/ReaperActualPortfolio.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </section>
 
-    <!-- ===================== SYSTEMS ===================== -->
+    <!-- ===================== SYSTEMS BUILT ===================== -->
     <section style="margin-bottom:2.5rem;">
       <div class="section-head">
         <span class="section-label">// systems.built</span>
         <div class="section-line"></div>
       </div>
 
-      <!-- system blocks — one per major system -->
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--black); border:var(--border-heavy); margin-bottom:1px;">
-
         <div class="service-block">
           <div class="service-num">01 — AI</div>
           <div class="service-title">AI Ticketing Subsystem</div>
           <div class="service-desc">
             Global server-side subsystem enabling dynamic coordination and behavior
             gating across NPCs. Includes async cleanup, server-side validation,
-            and Behavior Tree integration.
-            <!-- TODO: expand with specifics if desired -->
+            and Behavior Tree integration. Designed to scale across any number
+            of NPC agents without per-actor overhead.
           </div>
         </div>
-
         <div class="service-block">
           <div class="service-num">02 — AI</div>
           <div class="service-title">Auto Turret</div>
           <div class="service-desc">
-            Fully replicated turret AI with server-authoritative targeting,
-            quaternion-based rotation logic, and modular base classes.
-            Integrated Wwise SFX and animation controls for production readiness.
-            <!-- TODO: expand with specifics if desired -->
+            Fully replicated turret AI with server-authoritative targeting and
+            quaternion-based rotation logic. Built on modular base classes for
+            designer extensibility. Integrated Wwise SFX and animation controls
+            for production readiness.
           </div>
         </div>
-
       </div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--black); border:var(--border-heavy); border-top:none;">
 
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--black); border:var(--border-heavy); border-top:none;">
         <div class="service-block">
           <div class="service-num">03 — AI</div>
           <div class="service-title">Smart Object Patrol Framework</div>
           <div class="service-desc">
             Unified framework consolidating patrol and guard behaviors into a
-            spline-driven system. Designer-facing extensibility built in from
-            the ground up.
-            <!-- TODO: expand with specifics if desired -->
+            spline-driven system. Established scalable architecture with
+            designer-facing extensibility built in from the ground up —
+            a direct result of cross-team collaboration with design.
           </div>
         </div>
-
         <div class="service-block">
           <div class="service-num">04 — Perf</div>
           <div class="service-title">Blueprint-to-C++ Migrations</div>
           <div class="service-desc">
             Refactored performance-critical AI logic from Blueprint to native C++.
-            Optimized EQS cover evaluation and reduced runtime overhead across
-            multiple systems.
-            <!-- TODO: expand with specifics if desired -->
+            Optimized EQS cover evaluation and reduced runtime overhead.
+            All migrated systems maintained full replication validity
+            post-refactor.
           </div>
         </div>
-
       </div>
 
     </section>
@@ -163,48 +171,24 @@
       </div>
 
       <div class="screenshot-grid">
-        <!-- TODO: replace with real screenshot paths in assets/images/ -->
-        <img src="../assets/images/ra-screen-1.jpg" alt="Reaper Actual screenshot 1" />
-        <img src="../assets/images/ra-screen-2.jpg" alt="Reaper Actual screenshot 2" />
-        <img src="../assets/images/ra-screen-3.jpg" alt="Reaper Actual screenshot 3" />
-        <img src="../assets/images/ra-screen-4.jpg" alt="Reaper Actual screenshot 4" />
+        <img src="../assets/images/ra-screen-1.png" alt="EQS debug view — Smart Object query points across the map" />
+        <img src="../assets/images/ra-screen-2.png" alt="Reaper Actual warehouse level — UE5 editor perspective view" />
+        <!-- TODO: add more screenshots if available -->
       </div>
-    </section>
-
-    <!-- ===================== MIRO / DESIGN DOCS ===================== -->
-    <section style="margin-bottom:2.5rem;">
-      <div class="section-head">
-        <span class="section-label">// design.docs</span>
-        <div class="section-line"></div>
-      </div>
-
-      <!-- TODO: replace with your actual Miro embed URL -->
-      <!-- To get embed URL: open Miro board → Share → Embed → copy src URL -->
-      <div style="width:100%; aspect-ratio:16/9; border:var(--border-heavy); overflow:hidden; background:var(--black);">
-        <iframe
-          src="MIRO_EMBED_URL_HERE"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          style="display:block;">
-        </iframe>
-      </div>
-
     </section>
 
     <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
       <div class="footer-links">
-        <a class="footer-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://dps.gg/" target="_blank">dps.gg</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/michael-hall-400491303/" target="_blank">LinkedIn</a>
         <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
-        <a class="footer-link" href="https://www.fiverr.com/YOUR-FIVERR" target="_blank">Fiverr</a>
         <a class="footer-link" href="../assets/resume.pdf" target="_blank">Resume</a>
       </div>
       <span class="footer-copy">michael-hall.dev // 2026</span>
     </footer>
 
   </div>
-  <!-- end page-wrapper -->
 
 </body>
 </html>

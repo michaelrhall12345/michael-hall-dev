@@ -11,16 +11,19 @@
   <div class="page-wrapper">
 
     <!-- ===================== NAV ===================== -->
+    <!-- #1: name larger, "gameplay engineer" inline beside name -->
+    <!-- #2: nav tabs replaced with social link buttons -->
     <nav class="nav">
-      <div class="nav-logo">
-        <span class="nav-logo-id">// Gameplay Engineer</span>
-        <span class="nav-logo-name">Michael R. Hall</span>
+      <div class="nav-logo-inline">
+        <span class="nav-logo-name-lg">Michael R. Hall</span>
+        <span class="nav-logo-divider">//</span>
+        <span class="nav-logo-id-inline">Gameplay Engineer</span>
       </div>
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="assets/resume.pdf" target="_blank">Resume</a>
-        <a href="#contact">Contact</a>
+      <div class="footer-links">
+        <a class="footer-link" href="https://www.linkedin.com/in/michael-hall-400491303/" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
+        <a class="footer-link" href="https://www.fiverr.com/michaelhall123?public_mode=true" target="_blank">Fiverr</a>
+        <a class="footer-link" href="assets/resume.pdf" target="_blank">Resume</a>
       </div>
     </nav>
 
@@ -28,29 +31,49 @@
     <section class="hero-layout" style="display:grid; grid-template-columns:1fr 230px; gap:2rem; align-items:start; margin-bottom:2.5rem;">
 
       <div>
-        <div class="project-eyebrow">UE5 · C++ · Multiplayer</div>
+        <!-- #3: personal intro, not a slogan -->
         <h1 style="font-family:var(--font-mono); font-size:42px; font-weight:400; color:var(--black); line-height:1.0; letter-spacing:-0.02em; margin-bottom:18px;">
-          Systems that<br><span class="orange">feel alive.</span>
+          Hey, I'm <span class="orange">Michael.</span>
         </h1>
-        <p style="font-family:var(--font-mono); font-size:12px; color:var(--grey-text); line-height:1.9; max-width:420px; margin-bottom:1.5rem;">
-          C++ gameplay and AI architecture for multiplayer games. Server-authoritative combat, scalable NPC behavior, and production-grade UE5 systems.
+        <p style="font-family:var(--font-mono); font-size:12px; color:var(--grey-text); line-height:1.9; max-width:460px; margin-bottom:1.5rem;">
+          Professional UE5 gameplay engineer with 2.5 years of hands-on experience
+          shipping AI and multiplayer systems for a live extraction shooter.
+          I specialize in C++ gameplay architecture, server-authoritative networking,
+          and scalable NPC behavior — with a natural instinct for what feels
+          <span class="orange">fun</span> and a relentless drive to make systems that are
+          both satisfying to play and built to scale.
+          I care deeply about the intersection of engineering and design, and bring
+          that perspective into every system I build.
+          Engineers, designers, and artists I've shipped with have consistently
+          described me as someone who raises the quality of the work around them —
+          and I'm currently looking for my next role.
         </p>
 
+        <!-- #4: group labels orange, skill tags black with orange hover -->
         <div class="tag-section">
           <div class="tag-group">
-            <span class="tag-group-label">// platforms &amp; languages</span>
-            <span class="tag tag-primary">C++</span>
-            <span class="tag tag-primary">Unreal Engine 5</span>
-            <span class="tag tag-primary">Blueprint</span>
+            <span class="tag-group-label-orange">// platforms &amp; languages</span>
+            <span class="tag tag-skill">C++</span>
+            <span class="tag tag-skill">Unreal Engine 5</span>
+            <span class="tag tag-skill">Blueprint</span>
           </div>
           <div class="tag-divider"></div>
           <div class="tag-group">
-            <span class="tag-group-label">// specializations</span>
-            <span class="tag tag-secondary">Multiplayer</span>
-            <span class="tag tag-secondary">AI Systems</span>
-            <span class="tag tag-secondary">GAS</span>
-            <span class="tag tag-secondary">Behavior Trees</span>
-            <span class="tag tag-secondary">Server Auth</span>
+            <span class="tag-group-label-orange">// specializations</span>
+            <span class="tag tag-skill">Multiplayer</span>
+            <span class="tag tag-skill">AI Systems</span>
+            <span class="tag tag-skill">GAS</span>
+            <span class="tag tag-skill">Behavior Trees</span>
+            <span class="tag tag-skill">Server Auth</span>
+          </div>
+          <div class="tag-divider"></div>
+          <div class="tag-group">
+            <span class="tag-group-label-orange">// qualifications</span>
+            <span class="tag tag-skill">B.S. Computer Science</span>
+            <span class="tag tag-skill">Software Engineering</span>
+            <span class="tag tag-skill">Upsilon Pi Epsilon</span>
+            <span class="tag tag-skill">3.7+ GPA</span>
+            <span class="tag tag-skill">Bellevue University '26</span>
           </div>
         </div>
       </div>
@@ -71,10 +94,6 @@
         </div>
         <div class="stat-divider-inner"></div>
         <div class="stat-row">
-          <span class="stat-key">ships</span>
-          <span class="stat-val stat-val-accent">2026</span>
-        </div>
-        <div class="stat-row">
           <span class="stat-key">location</span>
           <span class="stat-val">Chicago, IL</span>
         </div>
@@ -89,6 +108,7 @@
     <hr class="divider" />
 
     <!-- ===================== PROJECT LOG ===================== -->
+    <!-- #7: SYS-003 is now LLM NPC Plugin, multiplayer plugin folded into T&N -->
     <section id="work">
 
       <div class="section-head">
@@ -98,7 +118,6 @@
 
       <div class="projects-layout">
 
-        <!-- 2x2 card grid -->
         <div class="project-grid">
 
           <a class="card"
@@ -154,25 +173,25 @@
           </a>
 
           <a class="card"
-             href="projects/multiplayer-plugin.html"
-             onmouseenter="previewProject('MP')"
+             href="projects/llm-npc-plugin.html"
+             onmouseenter="previewProject('LLM')"
              onmouseleave="clearPreview()">
-            <div class="card-bg" style="background-image:url('assets/images/mp-thumb.jpg');"></div>
+            <div class="card-bg" style="background-image:url('assets/images/llm-thumb.jpg');"></div>
             <div class="card-overlay"></div>
             <div class="card-body">
               <div class="card-meta">
                 <span class="card-code">SYS-003</span>
-                <span class="card-badge">Systems</span>
+                <span class="card-badge">Plugin</span>
               </div>
-              <div class="card-title">Multiplayer Plugin</div>
-              <div class="card-desc">Reusable UE5 session management and matchmaking abstraction. Online Subsystem integration.</div>
+              <div class="card-title">LLM NPC Plugin</div>
+              <div class="card-desc">UE5 plugin integrating GPT-driven NPC dialogue with tunable personality and behavioral data assets. OpenAI API integration.</div>
               <div class="card-footer">
                 <div class="card-tags-sm">
                   <span class="card-tag-sm">Plugin</span>
                   <span class="card-tag-sm">·</span>
-                  <span class="card-tag-sm">Networking</span>
+                  <span class="card-tag-sm">OpenAI</span>
                   <span class="card-tag-sm">·</span>
-                  <span class="card-tag-sm">OSS</span>
+                  <span class="card-tag-sm">C++</span>
                 </div>
                 <span class="card-arrow">→</span>
               </div>
@@ -206,19 +225,14 @@
           </a>
 
         </div>
-        <!-- end project-grid -->
 
         <!-- preview panel -->
         <div class="preview-panel">
           <div class="preview-panel-label">// project.detail</div>
           <div class="preview-body">
-            <div class="preview-hint" id="preview-hint">hover a<br>project</div>
+            <div class="preview-hint" id="preview-hint">hover a project<br>for more information</div>
             <div class="preview-content" id="preview-content">
               <div class="preview-project-name" id="preview-name"></div>
-              <div class="preview-img">
-                <img id="preview-img" src="" alt="" style="display:none;" />
-                <span class="preview-img-placeholder" id="preview-placeholder">[ image ]</span>
-              </div>
               <div class="preview-divider"></div>
               <div class="preview-desc" id="preview-desc"></div>
               <div>
@@ -231,48 +245,54 @@
         </div>
 
       </div>
-      <!-- end projects-layout -->
 
     </section>
 
     <hr class="divider" />
 
-    <!-- ===================== SERVICES ===================== -->
-    <section id="services" style="margin-bottom:2.5rem;">
+    <!-- ===================== AVAILABLE FOR ===================== -->
+    <!-- #6: reframed — full-time primary, freelance and consult secondary -->
+    <section id="available" style="margin-bottom:2.5rem;">
 
       <div class="section-head">
-        <span class="section-label">// services.available</span>
+        <span class="section-label" style="color:var(--orange);">
+          <span class="avail-dot" style="margin-right:6px;"></span>// available.for
+        </span>
         <div class="section-line"></div>
       </div>
 
-      <div class="services-grid">
+      <div class="services-grid" style="grid-template-columns:1fr 1fr 1fr;">
         <div class="service-block">
-          <div class="service-num">01 — Freelance</div>
-          <div class="service-title">UE5 Gameplay Development</div>
-          <div class="service-desc">Custom gameplay features, AI systems, and multiplayer architecture. Available via Fiverr.</div>
+          <div class="service-num">01 — Primary</div>
+          <div class="service-title">Full-Time Roles</div>
+          <div class="service-desc">Seeking a salaried gameplay engineering position at a studio working on something worth caring about.</div>
         </div>
         <div class="service-block">
-          <div class="service-num">02 — Consult</div>
-          <div class="service-title">Systems Architecture</div>
-          <div class="service-desc">C++ refactors, GAS integration, and server-authoritative networking review.</div>
+          <div class="service-num">02 — Available</div>
+          <div class="service-title">Freelance Dev</div>
+          <div class="service-desc">Custom UE5 gameplay features, AI systems, and multiplayer architecture. Available via Fiverr.</div>
+        </div>
+        <div class="service-block">
+          <div class="service-num">03 — Available</div>
+          <div class="service-title">Consultation</div>
+          <div class="service-desc">C++ refactors, GAS integration, server-authoritative networking review, and systems architecture.</div>
         </div>
       </div>
 
     </section>
 
-    <!-- ===================== FOOTER / CONTACT ===================== -->
+    <!-- ===================== FOOTER ===================== -->
     <footer class="footer" id="contact">
       <div class="footer-links">
-        <a class="footer-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/michael-hall-400491303/" target="_blank">LinkedIn</a>
         <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
-        <a class="footer-link" href="https://www.fiverr.com/YOUR-FIVERR" target="_blank">Fiverr</a>
+        <a class="footer-link" href="https://www.fiverr.com/michaelhall123?public_mode=true" target="_blank">Fiverr</a>
         <a class="footer-link" href="assets/resume.pdf" target="_blank">Resume</a>
       </div>
       <span class="footer-copy">michael-hall.dev // 2026</span>
     </footer>
 
   </div>
-  <!-- end page-wrapper -->
 
   <script src="script.js"></script>
 

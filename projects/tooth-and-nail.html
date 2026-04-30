@@ -12,15 +12,16 @@
 
     <!-- ===================== NAV ===================== -->
     <nav class="nav">
-      <div class="nav-logo">
-        <span class="nav-logo-id">// Gameplay Engineer</span>
-        <span class="nav-logo-name">Michael R. Hall</span>
+      <div class="nav-logo-inline">
+        <span class="nav-logo-name-lg">Michael R. Hall</span>
+        <span class="nav-logo-divider">//</span>
+        <span class="nav-logo-id-inline">Gameplay Engineer</span>
       </div>
-      <div class="nav-links">
-        <a class="nav-back" href="../index.html">← Back</a>
-        <a href="../index.html#work">Work</a>
-        <a href="../index.html#services">Services</a>
-        <a href="../assets/resume.pdf" target="_blank">Resume</a>
+      <div class="footer-links">
+        <a class="footer-link" href="../index.html">← Back</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/michael-hall-400491303/" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
+        <a class="footer-link" href="../assets/resume.pdf" target="_blank">Resume</a>
       </div>
     </nav>
 
@@ -32,18 +33,30 @@
         <h1 class="project-title">Tooth &amp;<br><span class="hl">Nail.</span></h1>
         <p class="project-summary">
           Multiplayer martial arts arena fighter built in Unreal Engine 5.
-          Reaction-based directional combat, server-authoritative pipeline,
-          and a posture system inspired by For Honor and Sekiro.
-          Solo design and engineering — active devlog below.
+          Reaction-based directional combat with a server-authoritative pipeline,
+          posture system inspired by For Honor and Sekiro, and character identities
+          rooted in real martial arts disciplines.
+          Solo design and engineering — every system from combat resolution
+          to network replication written from scratch.
         </p>
-        <div class="tag-group" style="gap:6px;">
-          <span class="tag tag-primary">C++</span>
-          <span class="tag tag-primary">UE5</span>
-          <span class="tag tag-secondary">Combat Pipeline</span>
-          <span class="tag tag-secondary">Server Auth</span>
-          <span class="tag tag-secondary">Guard States</span>
-          <span class="tag tag-secondary">Posture System</span>
-          <span class="tag tag-secondary">Multiplayer</span>
+
+        <div class="tag-section">
+          <div class="tag-group">
+            <span class="tag-group-label-orange">// primary</span>
+            <span class="tag tag-skill">C++</span>
+            <span class="tag tag-skill">Unreal Engine 5</span>
+          </div>
+          <div class="tag-divider"></div>
+          <div class="tag-group">
+            <span class="tag-group-label-orange">// systems &amp; tools</span>
+            <span class="tag tag-skill">Combat Pipeline</span>
+            <span class="tag tag-skill">Server Auth</span>
+            <span class="tag tag-skill">Guard States</span>
+            <span class="tag tag-skill">Posture System</span>
+            <span class="tag tag-skill">Hitbox Resolution</span>
+            <span class="tag tag-skill">Animation BPs</span>
+            <span class="tag tag-skill">Multiplayer Replication</span>
+          </div>
         </div>
       </div>
 
@@ -63,8 +76,8 @@
         </div>
         <div class="stat-divider-inner"></div>
         <div class="stat-row">
-          <span class="stat-key">status</span>
-          <span class="stat-val stat-val-accent">In Dev</span>
+          <span class="stat-key">milestone</span>
+          <span class="stat-val stat-val-accent">02 — Active</span>
         </div>
         <div class="stat-row">
           <span class="stat-key">devlog</span>
@@ -76,23 +89,35 @@
 
     <hr class="divider" />
 
-    <!-- ===================== CURRENT BUILD VIDEO ===================== -->
+    <!-- ===================== VIDEO ===================== -->
     <section style="margin-bottom:2.5rem;">
       <div class="section-head">
         <span class="section-label">// current.build</span>
         <div class="section-line"></div>
       </div>
 
-      <div class="video-wrap">
-        <!-- TODO: replace with latest build video YouTube embed ID -->
-        <!-- Update this whenever you have a newer build to show -->
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-          title="Tooth & Nail — Current Build"
-          allowfullscreen>
-        </iframe>
+      <video
+        controls
+        style="width:100%; border:var(--border-heavy); display:block; background:var(--black);">
+        <source src="../assets/ToothAndNailDemo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- ===================== SCREENSHOTS ===================== -->
+    <section style="margin-bottom:2.5rem;">
+      <div class="section-head">
+        <span class="section-label">// screenshots</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="screenshot-grid">
+        <img src="../assets/images/tn-screen-3.png" alt="Tooth and Nail — in-engine combat" />
+        <img src="../assets/images/tn-screen-1.png" alt="Tooth and Nail — design documentation" />
       </div>
     </section>
+
+    <hr class="divider" />
 
     <!-- ===================== DESIGN PILLARS ===================== -->
     <section style="margin-bottom:2.5rem;">
@@ -105,60 +130,42 @@
         <div class="service-block">
           <div class="service-num">01</div>
           <div class="service-title">Readable Combat</div>
-          <div class="service-desc">Attack directions, timing, and defensive responses must be visible and understandable at all times.</div>
+          <div class="service-desc">Attack directions, timing, and defensive responses must be visible and understandable at all times. If a player can't read what happened, the system failed.</div>
         </div>
         <div class="service-block">
           <div class="service-num">02</div>
           <div class="service-title">Reaction-Based Gameplay</div>
-          <div class="service-desc">Players win through timing, anticipation, and reading opponents — not spam or stat advantages.</div>
+          <div class="service-desc">Players win through timing, anticipation, and reading opponents — not spam or stat advantages. Skill expression scales naturally with mastery.</div>
         </div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--black); border:var(--border-heavy); border-top:none;">
         <div class="service-block">
           <div class="service-num">03</div>
           <div class="service-title">Martial Arts Identity</div>
-          <div class="service-desc">Characters rooted in real disciplines — Muay Thai, Wrestling, Judo. Moves chosen for game feel and identity.</div>
+          <div class="service-desc">Characters rooted in real disciplines — Muay Thai, Wrestling, Judo. Moves chosen for both game feel and authentic identity without sacrificing playability.</div>
         </div>
         <div class="service-block">
           <div class="service-num">04</div>
           <div class="service-title">Short Competitive Matches</div>
-          <div class="service-desc">3–5 minute matches designed for intensity and replayability. Skill expression scales with mastery.</div>
+          <div class="service-desc">3–5 minute matches designed for intensity and replayability. The same depth as a traditional fighter, compressed into something you can pick up in a lunch break.</div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== TDD EMBED ===================== -->
+    <!-- ===================== TDD ===================== -->
     <section style="margin-bottom:2.5rem;">
       <div class="section-head">
         <span class="section-label">// technical.design.doc</span>
         <div class="section-line"></div>
       </div>
 
-      <!-- TODO: upload your TDD PDF to assets/ and update the src path -->
-      <!-- Or embed a Google Doc: File → Share → Publish to web → Embed -->
-      <div style="width:100%; aspect-ratio:16/9; border:var(--border-heavy); overflow:hidden; background:var(--black);">
+      <div style="width:100%; height:600px; border:var(--border-heavy); overflow:hidden; background:var(--black);">
         <iframe
-          src="../assets/TDD_placeholder.pdf"
+          src="../assets/TnN_TDD.pdf"
           width="100%"
           height="100%"
-          style="display:block;">
+          style="display:block; border:none;">
         </iframe>
-      </div>
-    </section>
-
-    <!-- ===================== SCREENSHOTS ===================== -->
-    <section style="margin-bottom:2.5rem;">
-      <div class="section-head">
-        <span class="section-label">// screenshots</span>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="screenshot-grid">
-        <!-- TODO: replace with real screenshot paths -->
-        <img src="../assets/images/tn-screen-1.jpg" alt="Tooth and Nail screenshot 1" />
-        <img src="../assets/images/tn-screen-2.jpg" alt="Tooth and Nail screenshot 2" />
-        <img src="../assets/images/tn-screen-3.jpg" alt="Tooth and Nail screenshot 3" />
-        <img src="../assets/images/tn-screen-4.jpg" alt="Tooth and Nail screenshot 4" />
       </div>
     </section>
 
@@ -169,31 +176,49 @@
         <div class="section-line"></div>
       </div>
 
-      <!-- TODO: add a new .devlog-entry block each time you have an update -->
-      <!-- Most recent entry goes at the top -->
+      <!-- Most recent entry at the top. Add new entries here as you build. -->
 
-      <div class="devlog-entry" style="border:var(--border-heavy); padding:1.25rem; margin-bottom:1px; background:var(--bg);">
+      <div style="border:var(--border-heavy); padding:1.25rem; margin-bottom:1px; background:var(--bg);">
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
-          <span style="font-family:var(--font-mono); font-size:13px; color:var(--black);">Entry 001 — Combat Pipeline</span>
-          <!-- TODO: replace with real date -->
-          <span style="font-family:var(--font-mono); font-size:10px; color:var(--grey-mid);">TODO: date</span>
+          <span style="font-family:var(--font-mono); font-size:13px; color:var(--black);">Milestone 02 — Active Tasklist</span>
+          <span style="font-family:var(--font-mono); font-size:10px; color:var(--grey-mid);">2026</span>
         </div>
-        <p style="font-family:var(--font-mono); font-size:11px; color:var(--grey-text); line-height:1.9;">
-          <!-- TODO: write your first devlog entry here -->
-          Placeholder — describe what you built, what broke, what you learned.
-          Keep it technical and honest. This is the most interesting part of the page.
+        <p style="font-family:var(--font-mono); font-size:11px; color:var(--grey-text); line-height:1.9; margin-bottom:10px;">
+          Current milestone focus: Advantage System Prototype, 4-Directional Guard, Rules Engine / Prediction,
+          and Movement &amp; Animation Foundation. Key engineering targets include a deterministic server-auth
+          combat state, consistent attack resolution, and client-side movement lock during committed attacks.
         </p>
       </div>
 
-      <div class="devlog-entry" style="border:var(--border-heavy); border-top:none; padding:1.25rem; background:var(--bg);">
-        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
-          <span style="font-family:var(--font-mono); font-size:13px; color:var(--black);">Entry 000 — Project Start</span>
-          <span style="font-family:var(--font-mono); font-size:10px; color:var(--grey-mid);">TODO: date</span>
+
+
+    </section>
+
+    <!-- ===================== RELATED SYSTEMS ===================== -->
+    <section style="margin-bottom:2.5rem;">
+      <div class="section-head">
+        <span class="section-label">// related.systems</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div style="border:var(--border-heavy);">
+        <div class="service-block">
+          <div class="service-num">Multiplayer Sessions Plugin</div>
+          <div class="service-title" style="margin-bottom:8px;">Session Management &amp; Matchmaking</div>
+          <div class="service-desc" style="max-width:600px;">
+            Standalone UE5 plugin providing reusable session management, matchmaking hooks,
+            and Online Subsystem abstractions — developed in parallel with T&amp;N and
+            used as its networking foundation. Exposes Blueprint-accessible delegates
+            for session lifecycle events, keeping multiplayer setup out of game-specific code.
+          </div>
+          <div class="tag-group" style="gap:6px; margin-top:12px;">
+            <span class="tag tag-skill">Online Subsystem</span>
+            <span class="tag tag-skill">Session Mgmt</span>
+            <span class="tag tag-skill">Matchmaking</span>
+            <span class="tag tag-skill">Plugin Arch</span>
+            <span class="tag tag-skill">C++</span>
+          </div>
         </div>
-        <p style="font-family:var(--font-mono); font-size:11px; color:var(--grey-text); line-height:1.9;">
-          <!-- TODO: write your origin entry — why you started this, what the vision is -->
-          Placeholder — describe the genesis of the project and the core vision.
-        </p>
       </div>
 
     </section>
@@ -201,9 +226,9 @@
     <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
       <div class="footer-links">
-        <a class="footer-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/michael-hall-400491303/" target="_blank">LinkedIn</a>
         <a class="footer-link" href="https://github.com/michaelrhall12345" target="_blank">GitHub</a>
-        <a class="footer-link" href="https://www.fiverr.com/YOUR-FIVERR" target="_blank">Fiverr</a>
+        <a class="footer-link" href="https://www.fiverr.com/michaelhall123?public_mode=true" target="_blank">Fiverr</a>
         <a class="footer-link" href="../assets/resume.pdf" target="_blank">Resume</a>
       </div>
       <span class="footer-copy">michael-hall.dev // 2026</span>

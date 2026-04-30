@@ -480,17 +480,27 @@ img {
 }
 
 .preview-panel {
-  border: var(--border-heavy);
+  border: 2px solid var(--black);
   background: var(--black);
   display: flex;
   flex-direction: column;
   min-height: 340px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-panel.active {
+  animation: throb 1.8s ease-in-out infinite;
+}
+
+@keyframes throb {
+  0%, 100% { border-color: var(--orange); box-shadow: 0 0 0px rgba(255,85,0,0); }
+  50%       { border-color: var(--orange); box-shadow: 0 0 12px rgba(255,85,0,0.4); }
 }
 
 .preview-panel-label {
   font-family: var(--font-mono);
   font-size: 9px;
-  color: #444;
+  color: #ffffff;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 8px 12px;
@@ -508,7 +518,7 @@ img {
 .preview-hint {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #2a2a2a;
+  color: var(--orange);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
@@ -562,14 +572,14 @@ img {
 .preview-desc {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: #888;
+  color: #cccccc;
   line-height: 1.75;
 }
 
 .preview-skill-label {
   font-family: var(--font-mono);
   font-size: 9px;
-  color: #444;
+  color: var(--orange);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 6px;
@@ -585,8 +595,8 @@ img {
   font-family: var(--font-mono);
   font-size: 9px;
   padding: 2px 7px;
-  border: 1px solid #222;
-  color: #555;
+  border: 1px solid rgba(255,85,0,0.4);
+  color: #ffffff;
   letter-spacing: 0.05em;
 }
 
@@ -687,6 +697,8 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.project-hero-left {}
+
 .project-eyebrow {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -783,6 +795,71 @@ img {
    ============================================================ */
 .orange { color: var(--orange); }
 .mono   { font-family: var(--font-mono); }
+
+/* ============================================================
+   NAV — inline name + title layout  (#1, #2)
+   ============================================================ */
+.nav-logo-inline {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.nav-logo-name-lg {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  color: var(--black);
+  letter-spacing: 0.02em;
+}
+
+.nav-logo-divider {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--grey-light);
+}
+
+.nav-logo-id-inline {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--orange);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   TAG SKILL  — black border/text, orange on hover  (#4)
+   ============================================================ */
+.tag-skill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 3px 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background: transparent;
+  cursor: default;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.tag-skill:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+/* ============================================================
+   TAG GROUP LABEL — orange variant  (#4)
+   ============================================================ */
+.tag-group-label-orange {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--orange);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 2px;
+}
 
 /* ============================================================
    RESPONSIVE  — basic mobile handling
