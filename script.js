@@ -4,6 +4,18 @@
    ============================================================ */
 
 const projects = {
+  NML: {
+    name: "No Man's Land",
+    desc: 'Contract role at Lost Boys Interactive. Sole engineer on the combat and AI overhaul for a two-month investor demo, now building post-demo combat architecture.',
+    tags: ['Soft Lock-On', 'Motion Warping', 'State Harness', 'Enemy AI', 'Behavior Trees', 'C++'],
+    cta:  '→ view full breakdown'
+  },
+  ALT: {
+    name: 'Alter: Online',
+    desc: 'Freelance role at Studio Revive. Feeding loop, multi-axis morph system, and GAS-driven stat progression for companion creatures.',
+    tags: ['GAS', 'Morph Targets', 'Data Assets', 'Interaction', 'UE 5.7', 'C++'],
+    cta:  '→ view full breakdown'
+  },
   RA: {
     name: 'Reaper Actual',
     desc: 'Production role at Distinct Possibility Studios. Built and shipped AI and gameplay systems for a live UE5 extraction shooter.',

@@ -36,7 +36,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
@@ -101,7 +101,7 @@ img {
 
 .nav-logo-id {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -109,7 +109,7 @@ img {
 
 .nav-logo-name {
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--black);
   letter-spacing: 0.04em;
 }
@@ -122,7 +122,7 @@ img {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--grey-mid);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -136,7 +136,7 @@ img {
 /* back link used on project pages */
 .nav-back {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--grey-mid);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ img {
 
 .section-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--grey-mid);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -193,7 +193,7 @@ img {
 .tag {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   padding: 3px 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -229,7 +229,7 @@ img {
 
 .tag-group-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--grey-light);
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -254,7 +254,7 @@ img {
 
 .stat-title {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--orange);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -272,14 +272,14 @@ img {
 
 .stat-key {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.05em;
 }
 
 .stat-val {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--bg);
 }
 
@@ -318,7 +318,7 @@ img {
 
 .avail-text {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -408,7 +408,7 @@ img {
 
 .card-code {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--grey-light);
   letter-spacing: 0.15em;
   transition: color var(--transition);
@@ -416,7 +416,7 @@ img {
 
 .card-badge {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   padding: 2px 8px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -428,7 +428,7 @@ img {
 
 .card-title {
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--black);
   margin-bottom: 6px;
   transition: color var(--transition);
@@ -436,7 +436,7 @@ img {
 
 .card-desc {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--grey-text);
   line-height: 1.75;
   flex: 1;
@@ -457,14 +457,14 @@ img {
 
 .card-tag-sm {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--grey-mid);
   letter-spacing: 0.05em;
   transition: color var(--transition);
 }
 
 .card-arrow {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--grey-light);
   transition: color var(--transition);
 }
@@ -499,7 +499,7 @@ img {
 
 .preview-panel-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: #ffffff;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -517,7 +517,7 @@ img {
 
 .preview-hint {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -534,7 +534,7 @@ img {
 
 .preview-project-name {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--orange);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -559,7 +559,7 @@ img {
 
 .preview-img-placeholder {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: #2a2a2a;
   letter-spacing: 0.1em;
 }
@@ -571,14 +571,14 @@ img {
 
 .preview-desc {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: #cccccc;
   line-height: 1.75;
 }
 
 .preview-skill-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--orange);
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -593,7 +593,7 @@ img {
 
 .preview-tag {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   padding: 2px 7px;
   border: 1px solid rgba(255,85,0,0.4);
   color: #ffffff;
@@ -602,7 +602,7 @@ img {
 
 .preview-cta {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -627,7 +627,7 @@ img {
 
 .service-num {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--orange);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -636,14 +636,14 @@ img {
 
 .service-title {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   color: var(--black);
   margin-bottom: 6px;
 }
 
 .service-desc {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--grey-text);
   line-height: 1.7;
 }
@@ -666,7 +666,7 @@ img {
 
 .footer-link {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -682,7 +682,7 @@ img {
 
 .footer-copy {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--grey-light);
 }
 
@@ -699,7 +699,7 @@ img {
 
 .project-eyebrow {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--orange);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -711,12 +711,12 @@ img {
 
 .project-eyebrow::before {
   content: '▶';
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .project-title {
   font-family: var(--font-mono);
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 400;
   color: var(--black);
   line-height: 1.0;
@@ -730,7 +730,7 @@ img {
 
 .project-summary {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 15px;
   color: var(--grey-text);
   line-height: 1.9;
   max-width: 500px;
@@ -778,7 +778,7 @@ img {
 
 .content-block p {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 15px;
   color: var(--grey-text);
   line-height: 1.9;
   margin-bottom: 1rem;
@@ -805,20 +805,20 @@ img {
 
 .nav-logo-name-lg {
   font-family: var(--font-mono);
-  font-size: 22px;
+  font-size: 24px;
   color: var(--black);
   letter-spacing: 0.02em;
 }
 
 .nav-logo-divider {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 17px;
   color: var(--grey-light);
 }
 
 .nav-logo-id-inline {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 15px;
   color: var(--orange);
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -830,7 +830,7 @@ img {
 .tag-skill {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 13px;
   padding: 3px 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -851,7 +851,7 @@ img {
    ============================================================ */
 .tag-group-label-orange {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   color: var(--orange);
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -878,19 +878,19 @@ img {
     gap: 6px;
   }
   .footer-link {
-    font-size: 9px;
+    font-size: 12px;
     padding: 3px 8px;
   }
-  .nav-logo-name-lg  { font-size: 16px; }
-  .nav-logo-id-inline { font-size: 10px; }
-  .nav-logo-divider  { font-size: 11px; }
+  .nav-logo-name-lg  { font-size: 18px; }
+  .nav-logo-id-inline { font-size: 13px; }
+  .nav-logo-divider  { font-size: 14px; }
 
   /* hero — single column, hide stat block */
   .hero-layout       { grid-template-columns: 1fr !important; gap: 1rem; }
   .stat-block        { display: none; }
 
   /* hero text */
-  h1                 { font-size: 32px !important; }
+  h1                 { font-size: 34px !important; }
 
   /* tags wrap naturally, already flex-wrap */
 
@@ -913,7 +913,7 @@ img {
 
   /* project pages */
   .project-hero      { grid-template-columns: 1fr !important; gap: 1rem; }
-  .project-title     { font-size: 32px !important; }
+  .project-title     { font-size: 34px !important; }
   .screenshot-grid   { grid-template-columns: 1fr; }
 
   /* system blocks on project pages */
@@ -923,14 +923,43 @@ img {
   }
 
   /* section heads */
-  .section-label     { font-size: 8px; }
+  .section-label     { font-size: 11px; }
 
   /* video */
   .video-wrap        { aspect-ratio: 16/9; }
 }
 
 @media (max-width: 420px) {
-  h1                 { font-size: 26px !important; }
-  .project-title     { font-size: 26px !important; }
-  .nav-logo-name-lg  { font-size: 14px; }
+  h1                 { font-size: 28px !important; }
+  .project-title     { font-size: 28px !important; }
+  .nav-logo-name-lg  { font-size: 17px; }
+}
+/* ---------- media placeholder (images coming soon) ---------- */
+.media-placeholder {
+  border: var(--border-heavy);
+  background: var(--black);
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+.media-placeholder-title {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  color: var(--orange);
+}
+.media-placeholder-sub {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #777777;
+  text-transform: uppercase;
+}
+.screenshot-grid .media-placeholder {
+  border: none;
+  margin-bottom: 0;
 }
